@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'Norse';
+    src: url(./fonts/Norse-Bold.woff2);
+}
+
+:root {
+    --color1: #011826;
+    --color2: #042940;
+    --color3: #3E6E8C;
+    --color4: #EBEFF2;
+    --color5: #8AB0BF;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+a {
+    color: inherit;
+}
+
+p {
+    font-size: 1.3rem;
+}
+
+.image-container {
+    position: relative;
+    width: 35vw;
+    background-image: url(./imgs/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.photo-credits {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    padding: 16px 0;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 0;
+    top: 20vh;
+    width: 100%;
+    padding: 16px 0;
+    gap: 16px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.logo h1 {
+    font-family: 'Norse';
+    font-size: 8rem
+}
+
+.logo img {
+    height: 10rem
+}
+
+/* Form */
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 65vw;
+    background-color: var(--color4);
+}
+
+.right p {
+    max-width: 600px;
+    font-weight: 600;
+}
+
+.right p.second {
+    margin-top: 32px;
+    margin-bottom: 64px;
+}
+
+.form-container {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    background-color: white;
+    padding: 16px 0;
+    box-shadow: 0 5px 10px -5px rgb(175, 155, 155);
+}
+
+.form-container p {
+    width: 100%;
+    font-weight: 500;
+}
+
+form .form-input {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: row;
+    width: 50%;
+    padding: 8px 32px 8px 0;
+}
+
+.left-pad {
+    padding-left: 32px;
+}
+
+.error {
+    color: red;
+}

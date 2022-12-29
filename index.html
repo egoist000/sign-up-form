@@ -1,13 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Sign Up Form</title>
 </head>
+
 <body>
-    
+    <div class="image-container">
+        <div class="logo">
+            <img src="./imgs/logo.png" alt="odin-logo">
+            <h1>Odin</h1>
+        </div>
+        <div class="photo-credits">
+            <span>
+                Photo by
+                <a href="https://unsplash.com/photos/WshARXAY_l8">
+                    Kellen Riggin
+                </a>
+                on
+                <a href="https://unsplash.com">
+                    Unsplash
+                </a>
+            </span>
+        </div>
+    </div>
+    <div class="right">
+        <div class="left-pad">
+            <p>
+                This is not a real online service! You know you need something
+                like this in your life to help you realize your deepest dreams.
+                Sign up <em>now</em> to get started.
+            </p>
+            <p class="second">
+                You <em>know</em> you want to.
+            </p>
+        </div>
+        <form action="">
+            <div class="form-container left-pad">
+                <p>Let's do this!</p>
+                <div class="form-input">
+                    <label for="name">FIRST NAME</label>
+                    <input type="text" name="name" id="name" placeholder="Your name">
+                    <small class="error inactive">err msg</small>
+                </div>
+                <div class="form-input">
+                    <label for="last-name">LAST NAME</label>
+                    <input type="text" name="last-name" id="last-name" placeholder="Your last name">
+                    <small class="error inactive">err msg</small>
+                </div>
+                <div class="form-input">
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email" id="email" placeholder="mail@example.com">
+                    <small class="error inactive">err msg</small>
+                </div>
+                <div class="form-input">
+                    <label for="phone-number">PHONE NUMBER</label>
+                    <input type="tel" name="phone-number" id="phone-number" placeholder="123-456-7890">
+                    <small class="error inactive">err msg</small>
+                </div>
+                <div class="form-input">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" name="password" id="password" placeholder="********">
+                    <small class="error inactive">err msg</small>
+                </div>
+                <div class="form-input">
+                    <label for="confirm-password">CONFIRM PASSWORD</label>
+                    <input type="password" name="confirm-password" id="confirm-password" placeholder="********">
+                    <small class="error inactive">err msg</small>
+                </div>
+            </div>
+            <div class="submit-section left-pad">
+                <button type="submit">Create Acccount</button>
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
+        </form>
+    </div>
+    </div>
 </body>
+
 </html>
