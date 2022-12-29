@@ -84,7 +84,7 @@ p {
     background-color: var(--color4);
 }
 
-.right p {
+.head {
     max-width: 600px;
     font-weight: 600;
 }
@@ -103,7 +103,7 @@ p {
     box-shadow: 0 5px 10px -5px rgb(175, 155, 155);
 }
 
-.form-container p {
+.form-header {
     width: 100%;
     font-weight: 500;
 }
