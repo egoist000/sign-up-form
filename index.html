@@ -11,6 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/78fefce92e.js" crossorigin="anonymous"></script>
     <title>Sign Up Form</title>
 </head>
 
@@ -38,8 +39,8 @@
             <p>
                 This is not a real online service! You know you need something
                 like this in your life to help you realize your deepest dreams.
-                Sign up <em>now</em> to get started.
             </p>
+            <p>Sign up <em>now</em> to get started.</p>
             <p class="second">
                 You <em>know</em> you want to.
             </p>
@@ -47,35 +48,39 @@
         <form action="">
             <div class="form-container left-pad">
                 <p class="form-header">Let's do this!</p>
-                <div class="form-input">
-                    <label for="name">FIRST NAME</label>
-                    <input type="text" name="name" id="name" placeholder="Your name">
-                    <small class="error inactive">err msg</small>
+                <div class="left-form">
+                    <div class="form-input">
+                        <label for="name">FIRST NAME</label>
+                        <input type="text" name="name" id="name" placeholder="Your name" required>
+                        <small class="error inactive">err msg</small>
+                    </div>
+                    <div class="form-input">
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email" placeholder="mail@example.com" required>
+                        <small class="error inactive">err msg</small>
+                    </div>
+                    <div class="form-input">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" name="password" id="password" placeholder="********" required>
+                        <small class="error inactive">err msg</small>
+                    </div>
                 </div>
-                <div class="form-input">
-                    <label for="last-name">LAST NAME</label>
-                    <input type="text" name="last-name" id="last-name" placeholder="Your last name">
-                    <small class="error inactive">err msg</small>
-                </div>
-                <div class="form-input">
-                    <label for="email">EMAIL</label>
-                    <input type="email" name="email" id="email" placeholder="mail@example.com">
-                    <small class="error inactive">err msg</small>
-                </div>
-                <div class="form-input">
-                    <label for="phone-number">PHONE NUMBER</label>
-                    <input type="tel" name="phone-number" id="phone-number" placeholder="123-456-7890">
-                    <small class="error inactive">err msg</small>
-                </div>
-                <div class="form-input">
-                    <label for="password">PASSWORD</label>
-                    <input type="password" name="password" id="password" placeholder="********">
-                    <small class="error inactive">err msg</small>
-                </div>
-                <div class="form-input">
-                    <label for="confirm-password">CONFIRM PASSWORD</label>
-                    <input type="password" name="confirm-password" id="confirm-password" placeholder="********">
-                    <small class="error inactive">err msg</small>
+                <div class="right-form">
+                    <div class="form-input">
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" name="last-name" id="last-name" placeholder="Your last name" required>
+                        <small class="error inactive">err msg</small>
+                    </div>
+                    <div class="form-input">
+                        <label for="phone-number">PHONE NUMBER</label>
+                        <input type="tel" name="phone-number" id="phone-number" placeholder="123-456-7890">
+                        <small class="error inactive">err msg</small>
+                    </div>
+                    <div class="form-input">
+                        <label for="confirm-password">CONFIRM PASSWORD</label>
+                        <input type="password" name="confirm-password" id="confirm-password" placeholder="********" required>
+                        <small class="error inactive">err msg</small>
+                    </div>
                 </div>
             </div>
             <div class="submit-section left-pad">
@@ -83,7 +88,10 @@
                 <p>Already have an account? <a href="#">Log in</a></p>
             </div>
         </form>
-    </div>
+        <footer>
+            <i class="fa-brands fa-github fa-xl"></i>
+            <a href="https://github.com/egoist000">@egoist000</a>
+        </footer>
     </div>
 </body>
 
